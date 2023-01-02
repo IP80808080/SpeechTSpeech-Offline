@@ -40,8 +40,8 @@ def speak(tex):
             listen("its"+string)
         else:
             listen(string)
-    elif tex == "who am i":
-        listen("gaurav great person")
+    elif tex == "who are you":
+        listen("I am AI")
     elif tex ==  "who are you":
         listen("I am robo v1.o")
     elif tex ==  "my college":
