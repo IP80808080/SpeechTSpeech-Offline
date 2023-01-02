@@ -29,6 +29,8 @@ def listen(i):
 def speak(tex):
     if tex in dicte:
         listen(dicte[tex])
+    if tex == "okay stop":
+        raise SystemExit
 
 
 
