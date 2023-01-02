@@ -6,8 +6,8 @@ from gtts import gTTS
 from vosk import Model, KaldiRecognizer
 engine = pyttsx3.init()
 model = Model(r"K:\Projects\Programming\Python\Extra\Library\Speech Recognition\Vosk\vosk-model-small-en-in-0.4")
-model1 = Model(r"K:\Projects\Programming\Python\Extra\Library\Speech Recognition\Vosk\vosk-model-small-hi-0.22")
-recognizer = KaldiRecognizer(model or model1, 16000)
+
+recognizer = KaldiRecognizer(model, 16000)
 
 dicte = {
 "what is your name":"my name is Lucifer",
