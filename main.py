@@ -9,8 +9,11 @@ model = Model(r"K:\Projects\Programming\Python\Extra\Library\Speech Recognition\
 model1 = Model(r"K:\Projects\Programming\Python\Extra\Library\Speech Recognition\Vosk\vosk-model-small-hi-0.22")
 recognizer = KaldiRecognizer(model or model1, 16000)
 
-list1 = ["what is your name", "who are you", "what are you", "Hi", "Bye", 'How are you']
-list2 = ["my name is Lucifer", "I am robo v1.o", "I am a Bot", "Hello", "Bye", "fine and you"]
+dicte = {
+"what is your name":"my name is Lucifer",
+"who are you":"I am robo v1.o"
+
+}
 
 mic = pyaudio.PyAudio()
 stream = mic.open(format=pyaudio.paInt16, channels=1, rate=16000, input=True, frames_per_buffer=8192)
@@ -24,10 +27,9 @@ def listen(i):
     engine.setProperty('rate', 150)
 
 def speak(tex):
-    for i, j in zip(list1, list2):
-        if i == tex:
-            print(j)
-            listen(j)
+    if tex in dicte:
+        listen(dicte[tex])
+
 
 
 while True:
