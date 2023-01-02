@@ -41,13 +41,22 @@ def speak(tex):
         else:
             listen(string)
     elif tex == "who are you":
-        listen("I am AI")
-    elif tex ==  "who are you":
         listen("I am robo v1.o")
+    elif tex ==  "who is the head department of computer science":
+        listen("Doctor s b Patil")
+    elif tex ==  "who is the head department of electrical engineering":
+        listen("Doctor S R Paraskar")
+    elif tex ==  "who is the head department of information technology":
+        listen("Doctor A S Manekar")
+    elif tex ==  "who is the head department of electronics and telecommunication engineering":
+        listen("Doctor M N Tibdewal")
+    elif tex ==  "who is the head department of applied sciences and humanities":
+        listen("Doctor N A Patil")
+    elif tex ==  "who is the head department of mechanical engineering":
+        listen("Doctor S P Trikal")
     elif tex ==  "my college":
         listen("shri sant gajanan maharaj college of engineering shegon")
-    elif tex ==  "head of department":
-        listen("doctor s b patil")
+    
     elif tex ==  "my branch":
         listen("computer science and engineering")
 
