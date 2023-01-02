@@ -36,7 +36,7 @@ def speak(tex):
 
 while True:
 
-    data = stream.read(4096)
+    data = stream.read(4096,exception_on_overflow=False)
     if recognizer.AcceptWaveform(data):
         text = recognizer.Result()
         text1 = text[14:-3]
