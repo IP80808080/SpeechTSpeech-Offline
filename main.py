@@ -1,7 +1,7 @@
 import pyaudio
 import pyttsx3
 import vosk
-from gtts import gTTS
+
 
 from vosk import Model, KaldiRecognizer
 engine = pyttsx3.init()
