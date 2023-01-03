@@ -47,17 +47,17 @@ def speak(tex):
             listen(string)
     elif tex == "who are you":
         listen("I am robo v1.o")
-    elif tex == "head of department of computer science":
+    elif tex == "head of computer science":
         listen("Doctor s b Patil")
-        elif tex == "head of electrical engineering department":
+        elif tex == "head of electrical engineering":
         listen("Doctor S R Paraskar")
-    elif tex == "head of information technology department":
+    elif tex == "head of information technology":
         listen("Doctor A S Manekar")
     elif tex == "head of electronics department":
         listen("Doctor M N Tibdewal")
     elif tex == "head of applied science and humanities department":
         listen("Doctor N A Patil")
-    elif tex == "head of mechanical engineering department":
+    elif tex == "head of mechanical engineering":
         listen("Doctor S P Trikal")
 
     elif tex == "my branch":
